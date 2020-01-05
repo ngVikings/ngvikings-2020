@@ -1,4 +1,4 @@
-# Website for ngVikings 2019 conference
+# Website for ngVikings 2020 conference
 
 We use BrowserStack Open Source sponsored licence to test the website in many browsers on different platforms
 
