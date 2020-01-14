@@ -2536,3 +2536,15 @@
 			}
 
 	}
+
+	.sponsors img {
+		width: 160px;
+		float: left;
+		margin: 0 10px 20px 10px;
+	}
+
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
