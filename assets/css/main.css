@@ -1314,8 +1314,8 @@
 /* Basic */
 
 	body {
-		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/ship.jpg");
+		background-color: #1b1f28;
+		background-image: url("../../images/oslo-957743_1920.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1985,6 +1985,10 @@
 				border-left: solid 1px #fff;
 			}
 
+			#header footer a {
+				margin-bottom: 1em;
+			}
+
 			#header footer:before {
 				content: '';
 				display: block;
@@ -2256,8 +2260,8 @@
 		/* Basic */
 
 			body {
-				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/vikings.jpg");
+				background-color: #1b1f28;
+				background-image: url("../../images/oslo-957743_1920.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
