@@ -1315,7 +1315,7 @@
 
 	body {
 		background-color: #1b1f28;
-		background-image: url("../../images/oslo-957743_1920.jpg");
+		background-image: url("../../images/vikings.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1935,7 +1935,7 @@
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 0;
-		padding: 14em 0 14em 0;
+		padding: 4em 0 4em 0;
 		cursor: default;
 	}
 
@@ -1948,6 +1948,16 @@
 				font-weight: 600;
 				font-size: 2em;
 				letter-spacing: 10px;
+			}
+
+			#header header li {
+				margin-bottom: 5px;
+			}
+
+			#header header li h4 strong {
+				display: inline-block;
+				background: #2855a5;
+				padding: 0 5px;
 			}
 
 			#header header p {
@@ -1970,7 +1980,7 @@
 
 		#header footer {
 			position: absolute;
-			bottom: 9em;
+			bottom: 1em;
 			margin: 0;
 			width: 100%;
 		}
@@ -2047,6 +2057,52 @@
 			#banner a:hover {
 				border-bottom-color: rgba(255, 255, 255, 0);
 			}
+
+/* speakers */
+
+#speakers {
+	position: relative;
+	color: #fff;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+	text-align: center;
+	background: #b4450e url("images/banner.svg") bottom center no-repeat;
+	padding: 5em 0 5em 0;
+	margin: 0;
+	background-size: 125% auto;
+}
+
+	#speakers .button {
+		color: #2855a5;
+		text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+	}
+
+	#speakers header {
+		margin: 0 2em 2em 2em;
+	}
+
+		#speakers header h2 {
+			font-weight: 400;
+			font-size: 1.75em;
+			letter-spacing: 8px;
+		}
+
+	#speakers p {
+		margin: 0 auto;
+		max-width: 80%;
+	}
+
+	#speakers footer {
+		margin: 2em 0 1em 0;
+	}
+
+	#speakers a {
+		color: inherit;
+		border-bottom-color: rgba(255, 255, 255, 0.5);
+	}
+
+		#speakers a:hover {
+			border-bottom-color: rgba(255, 255, 255, 0);
+		}
 
 /* Footer */
 
@@ -2261,7 +2317,7 @@
 
 			body {
 				background-color: #1b1f28;
-				background-image: url("../../images/oslo-957743_1920.jpg");
+				background-image: url("../../images/vikings.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
@@ -2463,7 +2519,7 @@
 		/* Header */
 
 			#header {
-				padding: 6em 0 6em 0;
+				padding: 3em 0 3em 0;
 			}
 
 				#header header {
@@ -2477,7 +2533,7 @@
 					}
 
 				#header footer {
-					bottom: 4.5em;
+					bottom: 1em;
 					padding: 0 2em 0 2em;
 				}
 
@@ -2545,6 +2601,19 @@
 		width: 160px;
 		float: left;
 		margin: 0 10px 20px 10px;
+	}
+
+
+	.speakers div {
+		width: 20%;
+		float: left;
+		margin: 0 0 20px 0;
+		padding: 0 10px;
+		min-width: 180px;
+	}
+
+	.speakers div img {
+		width: 160px;
 	}
 
 	.clearfix::after {
