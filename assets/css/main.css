@@ -1359,7 +1359,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		text-transform: uppercase;
+		text-transform: none;
 		line-height: 1.75em;
 	}
 
@@ -1957,6 +1957,12 @@
 			#header header li h4 strong {
 				display: inline-block;
 				background: #2855a5;
+				padding: 0 5px;
+			}
+
+			#header header h3 strong {
+				display: inline-block;
+				background: #b4450e;
 				padding: 0 5px;
 			}
 
