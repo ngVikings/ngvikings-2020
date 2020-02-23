@@ -1,392 +1,197 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-7105068-12"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event" lang="en">
 
-      gtag('config', 'UA-7105068-12');
+<head>
+  <base href="{$ basepath $}">
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+  <meta content="{$ description $}" name="description">
+  <meta content="{$ keywords $}" name="keywords">
+  <meta content="{$ organizer.name $}" name="author">
+  <meta content="Project Hoverboard" name="generator">
+
+  <title>{$ title $}</title>
+
+  <link href="{$ url $}" rel="canonical">
+
+  <link href="images/favicon.ico" rel="icon">
+
+  <meta content="{$ webapp.themeColor $}" name="theme-color">
+  <link href="manifest.json" rel="manifest">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta content="yes" name="mobile-web-app-capable">
+  <!-- fallback for manifest.json -->
+  <meta content="{$ title $}" name="application-name">
+  <!-- fallback for manifest.json -->
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+  <meta content="{$ title $}" name="apple-mobile-web-app-title">
+
+  <!-- Homescreen icons. -->
+  <link href="images/manifest/icon-48.png" rel="apple-touch-icon">
+  <link href="images/manifest/icon-72.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="images/manifest/icon-96.png" rel="apple-touch-icon" sizes="96x96">
+  <link href="images/manifest/icon-144.png" rel="apple-touch-icon" sizes="144x144">
+  <link href="images/manifest/icon-192.png" rel="apple-touch-icon" sizes="192x192">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta content="images/manifest/icon-144.png" name="msapplication-TileImage">
+  <meta content="#00aba9" name="msapplication-TileColor">
+  <meta content="no" name="msapplication-tap-highlight">
+
+  <!-- G+ sharing meta data -->
+  <meta content="{$ title $}" itemprop="name">
+  <meta content="{$ description $}" itemprop="description">
+  <meta content="{$ image if image.startsWith('http') else (url + image) $}" itemprop="image">
+  <meta content="{$ startDate $}" itemprop="startDate">
+  <meta content="{$ endDate $}" itemprop="endDate">
+
+  <!-- Facebook sharing meta data -->
+  <meta content="{$ title $}" property="og:title">
+  <meta content="{$ title $}" property="og:site_name">
+  <meta content="website" property="og:type">
+  <meta content="{$ url $}" property="og:url">
+  <meta content="{$ description $}" property="og:description">
+  <meta content="Event" property="og:type">
+  <meta content="{$ image if image.startsWith('http') else (url + image) $}" property="og:image">
+  <meta content="image/jpeg" property="og:image:type" />
+
+  <!-- Twitter meta data -->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="@{$ organizer.twitter $}" name="twitter:creator">
+  <meta content="{$ title $}" name="twitter:title">
+  <meta content="{$ description $}" name="twitter:description">
+  <meta content="{$ image if image.startsWith('http') else (url + image) $}" name="twitter:image">
+  <meta name="twitter:label1" value="{$ location.label $}">
+  <meta name="twitter:data1" value="{$ location.name $}">
+  <meta name="twitter:label2">
+  <meta name="twitter:data2">
+
+  <link href="https://apis.google.com" rel="dns-prefetch">
+  <link href="https://www.google-analytics.com" rel="preconnect">
+  <link href="https://fcm.googleapis.com" rel="preconnect">
+  <link href="https://firestore.googleapis.com" rel="preconnect">
+  <script>
+
+    window.Polymer = { rootPath: '{$ basepath $}' };
+    window.HOVERBOARD = { Elements: {} };
+
+    function loadFirebaseModules(modules) {
+      return Promise.all(
+          modules.map((module) => new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = `node_modules/firebase/${module}.js`;
+            script.async = false;
+            script.onload = () => resolve();
+            script.onerror = (error) => reject(error);
+            document.head.appendChild(script);
+          })));
+    }
+
+    loadFirebaseModules([
+      'firebase-app',
+      'firebase-firestore',
+      'firebase-auth',
+      'firebase-messaging',
+      'firebase-performance',
+    ])
+        .then(() => {
+          firebase.initializeApp({
+            appId: '{$ firebase.appId $}',
+            apiKey: '{$ firebase.apiKey $}',
+            authDomain: '{$ firebase.authDomain $}',
+            databaseURL: '{$ firebase.databaseURL $}',
+            projectId: '{$ firebase.projectId $}',
+            storageBucket: '{$ firebase.storageBucket $}',
+            messagingSenderId: '{$ firebase.messagingSenderId $}',
+          });
+
+          firebase.performance();
+          firebase.firestore()
+              .enablePersistence({ tabSynchronization: true })
+              .catch(() => {
+                console.warn('DB offline support not available'); // eslint-disable-line no-console
+              });
+          // eslint-disable-next-line no-console
+          console.log('Firebase App is ready!');
+        });
+
     </script>
+    <script>
+      // First Input Delay polyfill https://github.com/GoogleChromeLabs/first-input-delay
+      // eslint-disable-next-line
+      !function(n,e){var t,o,i,c=[],f={passive:!0,capture:!0},r=new Date,a="pointerup",u="pointercancel";function p(n,c){t||(t=c,o=n,i=new Date,w(e),s())}function s(){o>=0&&o<i-r&&(c.forEach(function(n){n(o,t)}),c=[])}function l(t){if(t.cancelable){var o=(t.timeStamp>1e12?new Date:performance.now())-t.timeStamp;"pointerdown"==t.type?function(t,o){function i(){p(t,o),r()}function c(){r()}function r(){e(a,i,f),e(u,c,f)}n(a,i,f),n(u,c,f)}(o,t):p(o,t)}}function w(n){["click","mousedown","keydown","touchstart","pointerdown"].forEach(function(e){n(e,l,f)})}w(n),self.perfMetrics=self.perfMetrics||{},self.perfMetrics.onFirstInputDelay=function(n){c.push(n),s()}}(addEventListener,removeEventListener);
+  </script>
 
-    <title>
-      ngVikings - The main Angular event in the Nordics. And the only travelling
-      Angular conference in the world
-    </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
+  <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <link href="src/hoverboard-app.html" rel="import">
+  <script async defer src="scripts/service-worker-registration.js"></script>
 
-  <body>
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <h1>ngVikings 2020: Angular & Frontend Conference</h1>
-        <h3><strong>Oslo, Norway. Venue: Vika Kino</strong></h3><br>
-        <ul>
-          <li>
-            <h4>
-              <strong> May 25: Framework Day </strong> - all about Angular
-            </h4>
-          </li>
-          <li>
-            <h4>
-              <strong> May 26: Frontend Day </strong> - all about modern web
-              frontend
-            </h4>
-          </li>
-          <li>
-            <h4>
-              <strong> May 27: Workshops Day </strong> - full-day training (separate tickets)
-            </h4>
-          </li>
-        </ul>
-      </header>
-      <footer>
-        <a
-          href="https://bit.ly/ngvikings-2020-cfp"
-          class="button style2 scrolly-middle"
-          >Be our speaker!</a
-        >
-        <a
-          href="https://ti.to/ngvikings/2020"
-          class="button style2 scrolly-middle"
-          >Buy a ticket</a
-        >
-      </footer>
-    </section>
+  <style>
 
-    <!-- speakers -->
-    <section id="speakers">
-      <header><h2>Some of our speakers</h2></header>
+    html, body {
+      min-height: 100%;
+      height: 100%;
+    }
 
-      <div class="speakers clearfix">
-        <div>
-          <img src="images/people/JohnPapa.jpg" alt="" />
-          <h4>John Papa</h4>
-          <p>Microsoft <br /><small>USA</small></p>
-        </div>
-        <div>
-          <img src="images/people/AnaCidre.jpg" alt="" />
-          <h4>Ana Cidre</h4>
-          <p>Auth0<br /><small>Spain</small></p>
-        </div>
-        <div>
-          <img src="images/people/ManfredSteyer.jpg" alt="" />
-          <h4>Manfred Steyer</h4>
-          <p>SOFTWAREarchitekt<br /><small>Austria</small></p>
-        </div>
-        <div>
-          <img src="images/people/KristiyanKostadinov.jpg" alt="" />
-          <h4>Kristiyan Kostadinov</h4>
-          <p>Angular Core Team<br /><small>Denmark</small></p>
-        </div>
-        <div>
-          <img src="images/people/WassimChegham.jpg" alt="" />
-          <h4>Wassim Chegham</h4>
-          <p>Microsoft<br /><small>France</small></p>
-        </div>
-      </div>
+    body {
+      margin: 0;
+      font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
 
-      <footer>
-        <p>
-          <small>We will announce more speakers soon</small>
-        </p>
-        <p>
-          <br />
-          <a
-            href="https://bit.ly/ngvikings-2020-cfp"
-            class="button style2 scrolly"
-          >
-            Want to share the stage with these folks? Submit a session!
-          </a>
-        </p>
-      </footer>
-    </section>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    <!-- Banner -->
-    <section id="banner">
-      <header><h2>What is ngVikings?</h2></header>
-      <p>
-        ngVikings is a non-profit, non-commercial, 100% community-driven event
-        comprised of many Nordic Angular groups with more than 3500 active
-        members in total.
-      </p>
-      <p>
-        Always having Angular team members, Google Developer Experts and
-        legendary international speakers onboard, ngVikings Conference
-        guarantees an excellent program: fresh, technically deep and 100%
-        useful.
-      </p>
-      <footer>
-        <p>
-          <a
-            href="https://ti.to/ngvikings/2020"
-            class="button style2 scrolly"
-          >
-            Buy a ticket now
-          </a>
-        </p>
-        <p>
-          <small
-            >We sell conference tickets now. If you plan your travel and wish to attend a full-day training, please reserve Wednesday, May 27th - we'll announce the available workshops soon</small
-          >
-        </p>
-        <p>
-          <br />
-          <a
-            href="https://bit.ly/ngvikings-2020-cfp"
-            class="button style2 scrolly"
-          >
-            Be our speaker - submit your session before March 1
-          </a>
-        </p>
-      </footer>
-      <p>
-        Sponsoring and partnering inqueries:
-        <a href="http://bit.ly/sponsorship-ngvikings-2020"
-          >Request form and sponsor packages</a
-        >
-      </p>
-    </section>
+    /* styling for render while resources are loading */
+    hoverboard-app[unresolved] {
+      padding: 0 16px;
+      display: block;
+      line-height: 68px;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      color: #202020;
+      overflow: visible;
+    }
+  </style>
 
-    <!-- Sponsors -->
-    <article class="container box style2">
-      <header>
-        <h2>Our sponsors</h2>
-        <p>
-          Do you want to introduce your brand to the hundreds of passionate
-          developers - attendees of ngVikings conference?
-          <a href="http://bit.ly/sponsorship-ngvikings-2020"
-            >Look at our sponsor packages</a
-          >
-        </p>
+</head>
 
-        <div class="sponsors clearfix">
-          <a href="https://microsoft.com">
-            <img src="images/logos/microsoft.png" alt="" />
-          </a>
-          <a href="https://ag-grid.com">
-            <img src="images/logos/ag-grid.png" alt="" />
-          </a>
-          <a href="http://fronthouse.no/">
-            <img src="images/logos/fronthouse.png" alt="" />
-          </a>
-          <a href="http://storebrand.no/">
-            <img src="images/logos/storebrand.png" alt="" />
-          </a>
-          <a href="http://jpro.no/">
-            <img src="images/logos/jpro.png" alt="" />
-          </a>
-        </div>
+<body>
 
-        <br />
+  <hoverboard-app unresolved>{$ title $}</hoverboard-app>
 
-        <h2>Our partners</h2>
+<noscript>
+  Please enable JavaScript to view this website.
+</noscript>
 
-        <p>
-          Do you want to offer special discounts for the members of your meetup,
-          usergroup, conference you run?
-          <a href="mailto:contact@ngvikings.org"
-            >We are eager to collaborate!</a
-          >
-          (If you are just a member of some meetup and want a discount - contact
-          us, we'll reach out to your organizer)
-        </p>
+<script>
+  window.performance && performance.mark && performance.mark('index.html');
 
-        <div class="sponsors clearfix">
-          <a href="https://www.meetup.com/Mobile-Meetup-Oslo/">
-            <img src="images/logos/mobilemeetup.png" alt="" />
-          </a>
-          <a href="https://www.meetup.com/Oslo-Progressive-Web-Apps/">
-            <img src="images/logos/oslo-pwa.png" alt="" />
-          </a>
-          <a href="https://www.meetup.com/London-Progressive-Web-Apps/">
-            <img src="images/logos/london-pwa.png" alt="" />
-          </a>
-          <a href="https://www.meetup.com/framsia/">
-            <img src="images/logos/framsia.png" alt="" />
-          </a>
-          <a href="https://www.meetup.com/AngularJS-Oslo/">
-            <img src="images/logos/angular-oslo.png" alt="" />
-          </a>
-        </div>
-      </header>
-    </article>
+  window.onload = function () {
+    const indexRenderTime = window.measureDuration && window.measureDuration('index.html');
+    if (indexRenderTime) {
+      ga('send', 'timing', 'index.html', 'render', indexRenderTime);
+    }
+  };
 
-    <!-- Feature 2 -->
-    <article class="container box style1 left">
-      <a href="#" class="image fit">
-        <img src="images/group-2019.jpg" alt="" />
-      </a>
-      <div class="inner">
-        <header>
-          <h2><a href="https://2019.ngvikings.org">ngVikings 2019</a></h2>
-        </header>
-        <p>Copenhagen, Denmark</p>
-        <ul>
-          <li>
-            <a
-              href="https://www.youtube.com/playlist?list=PLVI0Ut22uwY5n8nKfDZeUb14tNksI4ny4"
-              >Videos</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/pg/ngVikings/photos/?tab=album&album_id=2375281262561111"
-              >Photos</a
-            >
-          </li>
-          <li><a href="https://2019.ngvikings.org/schedule/">Program</a></li>
-          <li><a href="https://2019.ngvikings.org/speakers/">Speakers</a></li>
-        </ul>
-      </div>
-    </article>
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    uiActions.setAddToHomeScreen(e);
+  });
+</script>
 
-    <!-- Feature 1 -->
-    <article id="first" class="container box style1 right">
-      <a href="#" class="image fit">
-        <img src="images/group-2018.jpg" alt="" />
-      </a>
-      <div class="inner">
-        <header>
-          <h2><a href="https://2018.ngvikings.org">ngVikings 2018</a></h2>
-        </header>
-        <p>Espoo, Finland</p>
-        <ul>
-          <li>
-            <a
-              href="https://www.youtube.com/playlist?list=PLVI0Ut22uwY4UC1v5fUvi2RIU4R4jPkba"
-              >Videos</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/pg/ngVikings/photos/?tab=album&album_id=1749532581802652"
-              >Photos</a
-            >
-          </li>
-          <li><a href="https://2018.ngvikings.org/schedule/">Program</a></li>
-          <li><a href="https://2018.ngvikings.org/speakers/">Speakers</a></li>
-        </ul>
-      </div>
-    </article>
+</body>
 
-    <!-- Feature 2 -->
-    <article class="container box style1 left">
-      <a href="#" class="image fit">
-        <img src="images/group-2017.jpg" alt="" />
-      </a>
-      <div class="inner">
-        <header>
-          <h2><a href="https://2017.ngvikings.org">ngVikings 2017</a></h2>
-        </header>
-        <p>Copenhagen, Denmark</p>
-        <ul>
-          <li>
-            <a href="https://opbeat.com/community/events/ngvikings-2017/"
-              >Videos</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/1213142038775045/photos/?tab=album&album_id=1361262560629658"
-              >Photos</a
-            >
-          </li>
-          <li><a href="https://2017.ngvikings.org/schedule/">Program</a></li>
-          <li><a href="https://2017.ngvikings.org/speakers/">Speakers</a></li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- Contact -->
-    <article class="container box style3">
-      <header>
-        <h2>Get Viking news first!</h2>
-        <p>
-          Join our mailing list. We send only very important information about
-          our conference.
-        </p>
-      </header>
-      <form
-        action="https://ngvikings.us14.list-manage.com/subscribe/post?u=6b46654a7c89c5e401545b749&amp;id=cc658f949f"
-        method="post"
-      >
-        <div class="row 50%">
-          <div class="12u$">
-            <input type="email" class="text" name="EMAIL" placeholder="Email" />
-          </div>
-          <div class="12u$">
-            <ul class="actions">
-              <li><input type="submit" value="Subscribe" /></li>
-            </ul>
-          </div>
-        </div>
-      </form>
-    </article>
-
-    <section id="footer">
-      <ul class="icons">
-        <li>
-          <a href="https://twitter.com/ngVikingsConf" class="icon fa-twitter">
-            <span class="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://facebook.com/ngVikings" class="icon fa-facebook">
-            <span class="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/ngVikings" class="icon fa-youtube">
-            <span class="label">YouTube</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:contact@ngvikings.org" class="icon fa-envelope">
-            <span class="label">Email</span>
-          </a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <ul class="menu">
-          <li>
-            &copy; 2017, 2019
-            <a
-              href="https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=38053205&soeg=ngcopenhagen&type=Alle"
-              >ngCopenhagen</a
-            >
-          </li>
-          <li>
-            &copy; 2018
-            <a
-              href="https://www.asiakastieto.fi/yritykset/fi/ngvikings-finland-ry/28506185/yleiskuva"
-              >ngVikings Finland ry</a
-            >
-          </li>
-          <li>
-            &copy; 2020
-            <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=924458194"
-              >Norwegian Web Developers Association</a
-            >
-          </li>
-          <li>
-            <a href="https://2019.ngvikings.org/cod"
-              >Code of Conduct</a
-            >
-          </li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </section>
-  </body>
 </html>

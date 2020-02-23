@@ -1,0 +1,17 @@
+{
+  "basepath": "/",
+  "url": "https://ngvikings.org/",
+  "analytics": "UA-7105068-12",
+  "prefix": "/",
+  "firebase": {
+    "apiKey": "AIzaSyDt9JO7YxWfy_2bn1lMEIDXfNu9XnEnh-E",
+    "authDomain": "ngvikings-2020.firebaseapp.com",
+    "databaseURL": "https://ngvikings-2020.firebaseio.com",
+    "projectId": "ngvikings-2020",
+    "storageBucket": "ngvikings-2020.appspot.com",
+    "messagingSenderId": "626891680800",
+    "appId": "1:626891680800:web:bcd35c9c3c6a9d6b622045",
+    "measurementId": "G-J0FVPL3KHZ"
+  },
+  "googleMapApiKey": "AIzaSyBW4q921yGrUvFhqlD3aPCA8FIkmc_ollk"
+}
