@@ -93,6 +93,17 @@
         }
       }
 
+      .info-items strong {
+    display: inline-block;
+    background: #2855a5;
+    padding: 5px 10px;
+}
+
+.info-item-small  {
+          font-size: 20px;
+
+        }
+
       @media (min-height: 500px) {
         hero-block {
           height: calc(100vh + 57px);
@@ -126,7 +137,11 @@
           font-size: 28px;
           line-height: 1.1;
         }
+
+
       }
+
+
     </style>
 
     <polymer-helmet active="[[active]]"></polymer-helmet>
@@ -140,12 +155,13 @@
       hide-logo
     >
       <div class="home-content" layout vertical center>
-        <plastic-image class="hero-logo" srcset="/images/logo.svg" alt="{$ title $}"></plastic-image>
+        <plastic-image class="hero-logo" srcset="/images/logo.png" alt="{$ title $}"></plastic-image>
         <div class="info-items">
-          <div class="info-item">{$ location.city $}. {$ dates $}</div>
-          <div class="info-item">{$ heroSettings.home.description $}</div>
+          <div class="info-item">Norway, Oslo, Vika Cinema</div>
+          <div class="info-item-small"><strong>May 25: Framework Day</strong> - all about Angular framework</div>
+          <div class="info-item-small"><strong>May 26: Frontend Day</strong> - all about modern web frontend</div>
+          <div class="info-item-small"><strong>May 27: Workshops Day</strong> - full-day training (separate tickets)</div>
         </div>
-
 
         <div class="action-buttons" layout horizontal center-justified wrap>
           <paper-button
