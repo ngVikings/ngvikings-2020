@@ -22,25 +22,6 @@
       "route": "home",
       "permalink": "/",
       "label": "Home"
-    },
-    {
-      "route": "speakers",
-      "permalink": "/speakers/",
-      "label": "Speakers"
-    },
-    {
-      "permalink": "https://ng-girls.org/ngVikings-2020/",
-      "label": "ng-Girls"
-    },
-    {
-      "route": "team",
-      "permalink": "/team/",
-      "label": "Team"
-    },
-    {
-      "route": "blog",
-      "permalink": "/blog/",
-      "label": "Blog"
     }
   ],
   "heroSettings": {
@@ -48,7 +29,7 @@
       "description": "The main Angular event in the Nordics. And the only travelling Angular conference in the world.",
       "background": {
         "color": "#2855a5",
-        "image": "/images/backgrounds/home.jpg"
+        "image": "/images/backgrounds/cancel.jpg"
       },
       "fontColor": "#FFF"
     },

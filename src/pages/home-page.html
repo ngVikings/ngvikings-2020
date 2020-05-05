@@ -3,14 +3,10 @@
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 
 <link rel="import" href="../elements/about-block.html">
-<link rel="import" href="../elements/speakers-block.html">
 <link rel="import" href="../elements/latest-posts-block.html">
-<link rel="import" href="../elements/tickets-block.html">
-<link rel="import" href="../elements/partners-block.html">
 <link rel="import" href="../elements/featured-videos.html">
 <link rel="import" href="../elements/subscribe-block.html">
 <link rel="import" href="../elements/gallery-block.html">
-<link rel="import" href="../elements/map-block.html">
 <link rel="import" href="../elements/about-organizer-block.html">
 <link rel="import" href="../mixins/scroll-functions.html">
 <link rel="import" href="../mixins/redux-mixin.html">
@@ -100,8 +96,8 @@
 }
 
 .info-item-small  {
-          font-size: 20px;
-
+          font-size: 12px;
+text-align: left;
         }
 
       @media (min-height: 500px) {
@@ -121,6 +117,8 @@
           transform: translateX(-50%);
           z-index: 2;
         }
+
+
       }
 
       @media (min-width: 812px) {
@@ -135,7 +133,11 @@
         .info-items {
           margin: 48px auto;
           font-size: 28px;
-          line-height: 1.1;
+        }
+
+        .info-item-small  {
+          font-size: 18px;
+
         }
 
 
@@ -157,35 +159,20 @@
       <div class="home-content" layout vertical center>
         <plastic-image class="hero-logo" srcset="/images/logo.png" alt="{$ title $}"></plastic-image>
         <div class="info-items">
-          <div class="info-item">Norway, Oslo, Vika Cinema</div>
-          <div class="info-item-small"><strong>May 25: Framework Day</strong> - all about Angular framework</div>
-          <div class="info-item-small"><strong>May 26: Frontend Day</strong> - all about modern web frontend</div>
-          <div class="info-item-small"><strong>May 27: Workshops Day</strong> - full-day training (separate tickets)</div>
-        </div>
+          <div class="info-item">ngVikings 2020 is cancelled</div>
+          <div class="info-item-small">
 
-        <div class="action-buttons" layout horizontal center-justified wrap>
-          <paper-button
-            class="watch-video"
-            on-tap="_playVideo"
-            ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="hero block - view highlights"
-          >
-            <iron-icon icon="hoverboard:movie"></iron-icon>
-            {$ viewHighlights $}
-          </paper-button>
-          <paper-button
-            on-tap="_scrollToTickets"
-            ga-on="click"
-            ga-event-category="tickets"
-            ga-event-action="scroll"
-            ga-event-label="hero block - scroll to tickets"
-            primary invert
-          >
-            <iron-icon icon="hoverboard:ticket"></iron-icon>
-            {$ buyTicket $}
-          </paper-button>
+            <p><strong>TL;DR We cancel our conference due to COVID-19 and we'll refund all tickets following days. We are investigating the opportunity to run ngVikings Online - stay tuned!</strong></p>
+
+              <p> It's always sad to cancel something the whole team worked hard on during the last months. Only last week we spent more than 10 hours on the team calls - building the program based on 200 CFP proposals we received. We had such big plans on creating an exciting, welcoming and inspiring educational experience for you. And it is with heavy hearts we need to cancel something developer community really wants - we never had so successful ticket sales on start like this year (thank you for your trust in ngVikings!). But we don't want to put the health and safety of our participants on risk and we strictly follow the Norwegian Institute of Public Health advice. Therefore ngVikings 2020, May 25-26 will not happen in its in-person format. No promises, but we investigate running online version.</p>
+              
+              <p><strong>Ticket owners:</strong> you will get full refunds during the next days, both for conferences and workshops. We'll cover related ticketing system fees and transfer commissions. Folks who booked non-refundable flights and/or hotels: unfortunately, we can't help with covering these costs. We recommend you to contact airlines and hotels directly - many of them are helpful and flexible these days.</p>
+
+              <p><strong>Our dear CFP participants:</strong> we almost completed to build program. If we manage to run the online version we'll contact some of you directly soon.</p>
+              
+              <p>We are deeply sorry about this cancellation and we fully understand the disappointment. This was a difficult decision to make, but we feel extremely lucky to have your understanding. We hope that you and your family stay safe and healthy.</p>
+
+          </div>
         </div>
 
         <div class="scroll-down" on-tap="_scrollNextBlock">
