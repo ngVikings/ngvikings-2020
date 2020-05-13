@@ -5,7 +5,7 @@ menu:
   main:
     weight: 60
 
-draft: false
+draft: true
 
 ---
 
