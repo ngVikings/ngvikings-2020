@@ -32,6 +32,3 @@ content:
       - name: ngVikings 2017
         url: https://2017.ngvikings.org/
         newTab: true
-      - name: ngVikings 2016
-        url: https://2016.ngvikings.org/
-        newTab: true

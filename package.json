@@ -9,7 +9,7 @@
     "build:styles": "node tools/styles.js",
     "build:scripts": "node tools/scripts.js",
     "build:site": "hugo",
-    "build:service-worker": "node tools/workbox.js",
+    "skip-build:service-worker": "node tools/workbox.js",
     "build:minify": "node tools/minify.js",
     "build": "run-s build:*"
   },
