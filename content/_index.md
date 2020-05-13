@@ -10,12 +10,14 @@ menu:
 
 {{% jumbo %}}
 
-## May 25-26th
-### Online. Free.
+## May 25-26th. Online.
+### Free conference for Angular developers.
 
-<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://ti.to/ngvikings/2020/with/ngvikings-online-free-ticket-may-25-26th" target="_blank">Get your free ticket</a>
+<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://ti.to/ngvikings/2020/with/ngvikings-online-free-ticket-may-25-26th" target="_blank">Get your free ticket</a>  
+<small style="font-size: 50%">It's important to claim your ticket - we'll send a link to the stream to the ticketholders before the event</small>
 
-<small>It's important to claim your ticket - we'll send a link to the stream to the ticketholders before the event</small>
+<a class="btn accent" style="margin-top: 1em;" href="blog/ngvikings-meetup/">Join pre-conference meetup</a>
+
 
 {{% /jumbo %}}
 

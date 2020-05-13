@@ -9,6 +9,7 @@ menu:
 
 {{% hero %}}
 
+We thank our partners for the support
 
 {{% /hero %}}
 
