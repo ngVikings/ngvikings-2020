@@ -4,7 +4,7 @@ name: Wassim Chegham
 id: wassim_chegham
 feature: true
 company: Microsoft
-city: 'Paris, France'
+city: 'France'
 photoURL: /images/speakers/wassim_chegham.jpg
 socials:
   - icon: twitter

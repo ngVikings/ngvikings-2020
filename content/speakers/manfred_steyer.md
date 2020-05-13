@@ -4,7 +4,7 @@ name: Manfred Steyer
 id: manfred_steyer
 feature: true
 company: ANGULARarchitects.io
-city: 'Gratz, Austria'
+city: 'Austria'
 photoURL: /images/speakers/manfred_steyer.jpg
 socials:
   - icon: twitter

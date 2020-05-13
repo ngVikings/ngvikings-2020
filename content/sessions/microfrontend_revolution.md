@@ -6,12 +6,12 @@ language: English
 format: conference
 tags:
   - _architecture
-level: beginner
+level: advanced
 speakers:
   - manfred_steyer
 draft: false
 ---
-How a developer can tell if the system is sick just by taking a look at the input and the output? If you'd like to know that (plus you like standup comedy), come an see! The treatment is safe ;-)
-
-One approach to get familiar with a system is a long and intense reading the manual (and to run an eye over the source code sometimes). Another approach is to take a deep dive into the data model (often in the DB) and to surf the user interface. Both are natural ends of the system, the legendary Input and Output. By examining these ends one can check if there's good digestion or if guts are rotten. Careful examination can confirm "common DDDosis", "malignant stringosis", "regex diarrhoea" or "not-made-here syndrome".
-Unfortunately, sometimes developers get infected in their prenatal life (meaning: at their university). Let me invite you to treatment. A laxative one. (That is: a sequel of "Passwords. Do you keep them safe?")
+The implementation of microfrontends has so far been anything but easy. Since common frameworks and build tools didn't even know this idea, you had to dig into the bag of tricks.
+Module Federation offered by Webpack 5 initiates a crucial change of direction here. It allows you to load separately compiled applications at runtime and to share libraries between them.
+In this session you will learn how you can use this mechanism to create microfrontends with Angular. In addition to the happy day scenarios, we also discuss pitfalls and approaches to avoid them. Furthermore, we take a look at possible alternatives.
+At the end of the session you have an overview of the topic and know how you can use Module Federation in your projects and what the consequences are.

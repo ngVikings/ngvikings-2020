@@ -7,3 +7,4 @@ company: ngGirls
 city: 'Germany'
 photoURL: /images/speakers/martina_kraus.jpg
 ---
+Martina is a Google Developer Expert in Angular and Web Technologies, as a Senior Frontend developer, she focuses on implementing highly scalable software-solution with Angular. Besides giving workshops as an Angular Trainer, she founded the JavaScript User group, is a core member of the ngGirls Team and organizes the German Angular conference NG-DE.
