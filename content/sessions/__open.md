@@ -1,9 +1,9 @@
 ---
 key: __open
-title: 'Accueil, Thé, Café et Chocolatines'
+title: 'Opening words'
 format: open
 tags:
   - open
 speakers: []
 ---
-Accueil, Thé, Café et Chocolatines
+Starting the conference day

@@ -1,9 +1,9 @@
 ---
 title: Partners
 
-#menu:
-#  main:
-#    weight: 20
+menu:
+  main:
+    weight: 20
 
 ---
 

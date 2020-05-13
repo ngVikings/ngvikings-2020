@@ -5,7 +5,7 @@ menu:
   main:
     weight: 60
 
-draft: true
+draft: false
 
 ---
 
@@ -18,3 +18,7 @@ ngVikings is a non-profit, non-commercial, 100% community-driven event comprised
 <!-- ... -->
 
 {{< teams types="core=Core Team,contributors=Contributors" >}}
+
+{{% partners categories="organizers" %}}
+
+{{% /partners %}}

@@ -8,7 +8,9 @@ menu:
 ---
 
 {{% hero %}}
-<!-- TODO: filter and search -->
+
+Awesome team of ngVikings speakers
+
 {{% /hero %}}
 
 

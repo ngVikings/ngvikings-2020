@@ -1,9 +1,9 @@
 ---
 title: Schedule
 
-#menu:
-#  main:
-#    weight: 10
+menu:
+  main:
+    weight: 10
 
 horizontal: false
 
@@ -11,5 +11,6 @@ horizontal: false
 
 {{% hero %}}
 
-<!-- TODO: filter and search -->
+We work on the detailed schedule
+
 {{% /hero %}}
