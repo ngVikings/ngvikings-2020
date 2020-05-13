@@ -1,0 +1,21 @@
+- key: _architecture
+  name: "\U0001F916 Architecture"
+  id: _architecture
+- key: _tooling
+  name: "\U0001F329 Tooling"
+  id: _tooling
+- key: _ecosystem
+  name: "\U0001F4DF Ecosystem"
+  id: _ecosystem
+- key: _best_practices
+  name: "\U0001F4DD Best Practices"
+  id: _best_practices
+- key: _method___tools
+  name: "\U0001F6E0 Method & Tools"
+  id: bb5eeaca-3d8d-5858-b4a9-63d90a11a792
+- key: _native_mobile_apps
+  name: "\U0001F4F1 Native mobile apps"
+  id: 9edfb0de-db78-5e18-831d-d0c56d751515
+- key: _web
+  name: "\U0001F30D Web"
+  id: cff3cdbc-52e9-5d5a-8f98-927ee005f59b

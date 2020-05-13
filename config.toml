@@ -1,0 +1,78 @@
+baseURL = "/"
+languageCode = "en"
+title = "ngVikings 2020"
+
+# Theme
+theme = "ngvikings-2020"
+
+# Params
+enableEmoji = true
+enableRobotsTXT = true
+enableMissingTranslationPlaceholders = true
+
+googleAnalytics = "UA-7105068-12"
+
+[params]
+    title = "ngVikings 2020 - The legendary Angular conference goes Online. May 25-26th. Free Angular conference."
+    date = "2020-05-25"
+    description = "Having Angular team members, Google Developer Experts and legendary international speakers onboard, ngVikings Conference guarantees an excellent program: fresh, technically deep and 100% useful."
+    images = ["/images/social-share.png"]
+    email = "contact@ngvikings.org"
+    keywords = "event, angular, gde, google, programming, android, chrome, polymer, developers, web, cloud"
+    copyright = "ngVikings Team"
+    cfpUrl = "http://bit.ly/ngvikings-2020-cfp"
+    subscriptionUrl = "http://eepurl.com/dlzDe9"
+    appleTouchIcon = "/manifest/icon-large.png"
+    favicon32 = "/manifest/icon-large.png"
+    favicon16 = "/manifest/icon-large.png"
+    manifest = "/manifest.json"
+    safariPinnedTab = "/safari-pinned-tab.svg"
+    themeColor = "#b4450e"
+    googleWebmasterKey = ""
+
+[params.logos]
+    jumbo = "/images/logos/logo.png"
+    header = "/images/logos/logo.png"
+    footer = "/images/logos/logo.png"
+
+[menu]
+[[menu.main]]
+    identifier = "ng-girls"
+    name = "ng-Girls"
+    url = "https://ng-girls.org/ngVikings-2020/"
+    weight = 190
+    external = true
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[languages]
+[languages.en]
+    weight = 1
+    languageName = "gb"
+
+
+[taxonomies]
+  tag = "tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = true
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false

@@ -1,0 +1,38 @@
+- title: Maxim Salnikov
+  type: core
+  subtitle: Organizer
+  photo: maxim_salnikov.jpg
+  socials:
+    - link: 'https://www.twitter.com/webmaxru'
+      name: Twitter
+    - link: 'https://github.com/webmaxru'
+      name: Github
+    - link: 'https://www.linkedin.com/in/webmax/'
+      name: Linkedin
+  key: maxim_salnikov
+
+- title: Sherry List
+  type: core
+  subtitle: Organizer
+  photo: sherry_list.jpg
+  socials:
+    - link: 'https://www.facebook.com/sherry.list.a'
+      name: Facebook
+    - link: 'https://twitter.com/sherrrylst'
+      name: Twitter
+    - link: 'https://github.com/sazimi/'
+      name: Github
+  key: sherry_list
+
+- title: Banafsheh Rahnama
+  type: contributors
+  subtitle: Graphic designer
+  photo: banafsheh_rahnama.jpg
+  socials:
+    - link: 'https://www.facebook.com/sherry.list.a'
+      name: Facebook
+    - link: 'https://twitter.com/sherrrylst'
+      name: Twitter
+    - link: 'https://github.com/sazimi/'
+      name: Github
+  key: banafsheh_rahnama

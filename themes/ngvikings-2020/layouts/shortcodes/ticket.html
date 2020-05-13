@@ -1,0 +1,23 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="ticket" {{ if .Get "soldOut" }}aria-disabled="true"{{end}}>
+	<div class="ticket-name">{{ .Get "name "}}</div>
+	<div class="ticket-price">{{ .Get "price" }}</div>
+	<div class="ticket-date">
+		{{ $lang := $.Page.Language.Lang }}
+		{{ partial "date-short.html" (dict "time" (.Get "starts") "lang" $lang) }}
+		-
+		{{ partial "date-short.html" (dict "time" (.Get "ends") "lang" $lang) }}
+	</div>
+	<div class="ticket-info">{{ .Get "info" }}</div>
+
+	{{ if .Get "soldOut" }}
+	<span class="btn" aria-disabled="true">{{ i18n "home_tickets_soldout" }}</span>
+	{{ else if .Get "close" }}
+	<span class="btn" aria-disabled="true">{{ i18n "home_tickets_close" }}</span>
+	{{ else }}
+	<a href="{{ .Get "url" }} "class="btn primary" rel="noopener noreferrer" target="_blank">
+		{{ partial "icon.html" "ticket" }}
+		{{- i18n "home_tickets_action" -}}
+	</a>
+	{{ end }}
+</div>

@@ -1,0 +1,17 @@
+{{- $photo := relURL (path.Join "images" "team" .key) }}
+{{ partial "picture" (dict "img" $photo "class" "photo" ) }}
+
+<div class="label">
+	<h3>{{ .title }}</h3>
+	<h4>{{ .subtitle }}</h4>
+	<ul class="socials">
+		{{ range .socials }}
+		<li>
+			<a class="social" rel="noopener noreferrer" href="{{ .link }}" target="_blank">
+				{{ partial "icon.html" (lower .name) }}
+				{{- .name -}}
+			</a>
+		</li>
+		{{ end }}
+	</ul>
+</div>

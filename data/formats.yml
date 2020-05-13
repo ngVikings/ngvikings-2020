@@ -1,0 +1,9 @@
+- key: conference
+  name: Conference
+  id: conference
+- key: keynote
+  name: Keynote
+- key: open
+  name: Opening
+- key: panel
+  name: Panel discussion

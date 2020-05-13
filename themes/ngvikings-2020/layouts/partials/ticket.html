@@ -1,0 +1,15 @@
+<div class="ticket" {{ if .soldOut }}aria-disabled="true"{{end}}>
+	<div class="ticket-name">{{ .name }}</div>
+	<div class="ticket-price">{{ .price }} {{ .currency }}</div>
+	<div class="ticket-date">{{ .starts }} - {{ .ends }}</div>
+	<div class="ticket-info">{{ .info }}</div>
+
+	{{ if .soldOut }}
+	<span class="btn" aria-disabled="true">{{ i18n "home_tickets_soldout" }}</span>
+	{{ else }}
+	<a href="{{ .url }}" class="btn primary" rel="noopener noreferrer" target="_blank">
+		{{ partial "icon.html" "ticket" }}
+		{{- i18n "home_tickets_action" -}}
+	</a>
+	{{ end }}
+</div>

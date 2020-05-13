@@ -1,0 +1,17 @@
+/resources/
+public/
+node_modules/
+.idea/
+.vscode/
+yarn-error.log
+
+
+static/main.js
+static/schedule/schedule*.pdf
+*-1140.jpg
+*-960.jpg
+*-720.jpg
+*-540.jpg
+
+/static/styles/*.css
+*.webp
