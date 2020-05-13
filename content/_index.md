@@ -10,11 +10,11 @@ menu:
 
 {{% jumbo %}}
 
-## May 25-26th. Online.
-### Free conference for Angular developers.
+## May 25-26th, Online
+### Free conference for Angular developers
 
-<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://ti.to/ngvikings/2020/with/ngvikings-online-free-ticket-may-25-26th" target="_blank">Get your free ticket</a>  
-<small style="font-size: 50%">It's important to claim your ticket - we'll send a link to the stream to the ticketholders before the event</small>
+<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://ti.to/ngvikings/2020/with/ngvikings-online-free-ticket-may-25-26th" target="_blank">Get your ticket</a>  
+<small style="font-size: 50%; display: block;">It's important to claim your ticket - we'll send a link to the stream to the ticketholders before event</small>
 
 <a class="btn accent" style="margin-top: 1em;" href="blog/ngvikings-meetup/">Join pre-conference meetup</a>
 
@@ -22,7 +22,7 @@ menu:
 {{% /jumbo %}}
 
 
-{{% home-info what="Participants:3000,Day:2,Sessions:12,Fun:∞" class="primary" %}}
+{{% home-info what="Participants:3000,Day:2,Sessions:14,Fun:∞" class="primary" %}}
 ## What is ngVikings?
 
 ngVikings is a non-profit, non-commercial, 100% community-driven event comprised of many Nordic Angular groups with more than 3500 active members in total.
