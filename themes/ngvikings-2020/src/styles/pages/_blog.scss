@@ -22,7 +22,7 @@
 
   main h1, main .content {
     max-width: var(--theJdrSize);
-    margin: 0 auto;
+    margin: 0 inherit;
   }
 
   .content {
