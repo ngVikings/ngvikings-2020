@@ -1,7 +1,6 @@
 - title: Maxim Salnikov
   type: core
   subtitle: Organizer
-  photo: maxim_salnikov.jpg
   socials:
     - link: 'https://www.twitter.com/webmaxru'
       name: Twitter
@@ -14,7 +13,6 @@
 - title: Sherry List
   type: core
   subtitle: Organizer
-  photo: sherry_list.jpg
   socials:
     - link: 'https://www.facebook.com/sherry.list.a'
       name: Facebook
@@ -24,15 +22,53 @@
       name: Github
   key: sherry_list
 
+- title: Chris Noring
+  type: core
+  subtitle: Organizer
+  key: chris_noring
+
+- title: Jørn Are Hatlelid
+  type: core
+  subtitle: Organizer
+  key: jorn_are_hatletid
+
+- title: Michael Karen
+  type: core
+  subtitle: Organizer
+  key: michael_karen
+
+- title: Jagoda Cubrilo
+  type: core
+  subtitle: Organizer
+  key: jagoda_cubrilo
+
+- title: Fabriece Sumuni
+  type: core
+  subtitle: Organizer
+  key: fabriece_sumuni
+
+- title: Majid Hajian
+  type: core
+  subtitle: Organizer
+  key: majid_hajian
+
 - title: Banafsheh Rahnama
   type: contributors
   subtitle: Graphic designer
-  photo: banafsheh_rahnama.jpg
-  socials:
-    - link: 'https://www.facebook.com/sherry.list.a'
-      name: Facebook
-    - link: 'https://twitter.com/sherrrylst'
-      name: Twitter
-    - link: 'https://github.com/sazimi/'
-      name: Github
   key: banafsheh_rahnama
+
+- title: Alexander Hafstad
+  type: contributors
+  key: alexander_hafstad
+
+- title: Zhentian Wan
+  type: contributors
+  key: zhentian_wan
+
+- title: Shirin Sameiee
+  type: contributors
+  key: shirin_sameiee
+
+- title: Juan Herrera
+  type: mcs
+  key: juan_herrera

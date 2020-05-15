@@ -3,7 +3,6 @@ key: ag-grid
 title: ag-Grid
 category: sponsors
 order: 33
-logo: /images/partners/sponsors/ag-grid.png
 website: 'https://www.ag-grid.com/'
 lang: en
 why: >

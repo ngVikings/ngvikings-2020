@@ -3,7 +3,6 @@ key: microsoft
 title: Microsoft
 category: sponsors
 order: 33
-logo: /images/partners/sponsors/microsoft.png
 website: 'https://www.microsoft.com/'
 lang: en
 why: >

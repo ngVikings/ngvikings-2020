@@ -11,7 +11,7 @@ draft: false
 
 {{% hero %}}
 
-ngVikings is a non-profit, non-commercial, 100% community-driven event comprised of many Nordic Angular groups with more than 3500 active members in total.
+ngVikings is a non-profit, non-commercial, 100% community-driven event comprised of many Nordic Angular groups with more than 6500 active members in total.
 
 * AngularJS Copenhagen
 * GDG Copenhagen
@@ -24,7 +24,7 @@ ngVikings is a non-profit, non-commercial, 100% community-driven event comprised
 {{% /hero %}}
 
 
-{{< teams types="core=Core Team,contributors=Contributors" >}}
+{{< teams types="core=Core Team,contributors=Contributors,mcs=MCs" >}}
 
 
 {{% partners categories="organizers=Organizing communities" %}}
