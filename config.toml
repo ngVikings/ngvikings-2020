@@ -49,7 +49,7 @@ unsafe= true
 [languages]
 [languages.en]
     weight = 1
-    languageName = "gb"
+    languageName = "en"
 
 
 [taxonomies]

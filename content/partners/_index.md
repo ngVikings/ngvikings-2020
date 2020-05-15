@@ -1,5 +1,5 @@
 ---
-title: Partners
+title: Supporters
 
 menu:
   main:
@@ -9,13 +9,13 @@ menu:
 
 {{% hero %}}
 
-We thank our partners for the support
+We thank our friends for the support
 
 {{% /hero %}}
 
 
 <!-- Parteners list -->
 
-{{% partners categories="sponsors,communities" %}}
+{{% partners categories="sponsors=Sponsors,communities=Partners" %}}
 
 {{% /partners %}}

@@ -139,12 +139,8 @@ body > header {
           color: initial;
         }
 
-        &.lang-fr::before {
-          content: '🇫🇷';
-        }
-
-        &.lang-gb::before {
-          content: '🇬🇧';
+        &.lang-en::before {
+          content: 'EN';
         }
       }
 

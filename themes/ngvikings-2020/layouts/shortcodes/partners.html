@@ -6,12 +6,15 @@
 
 {{ $site := .Site }}
 {{ range (split (.Get "categories") ",") }}
-<section class="partners-group partner-{{ . }}">
+{{ $typeLabel := (split . "=") }}
+{{ $type := (index $typeLabel 0) }}
+{{ $label := (index $typeLabel 1) }}
+<section class="partners-group partner-{{ $type }}">
 <h3 class="fancy">
-<span>{{ . }}</span>
+<span>{{ $label }}</span>
 </h3>
 <ul>
-	{{ $partners := where $site.AllPages "Params.category" . }}
+{{ $partners := where $site.AllPages "Params.category" $type }}
 {{ range sort $partners ".Params.order" "asc" }}
 <li>{{ partial "partner.html" . }}</li>
 {{ end }}

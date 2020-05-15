@@ -68,6 +68,6 @@ Always having Angular team members, Google Developer Experts, and legendary inte
 
 {{% /album  %}}
 
-{{% partners categories="sponsors,communities" %}}
-## Partners
+{{% partners categories="sponsors=Sponsors,communities=Partners" %}}
+## Our supporters
 {{% /partners %}}

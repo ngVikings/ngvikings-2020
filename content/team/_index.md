@@ -13,14 +13,20 @@ draft: false
 
 ngVikings is a non-profit, non-commercial, 100% community-driven event comprised of many Nordic Angular groups with more than 3500 active members in total.
 
+* AngularJS Copenhagen
+* GDG Copenhagen
+* AngularJS Oslo
+* AngularJS Gothenburg
+* ngAarhus
+* ngStockholm
+* Angular Finland
+
 {{% /hero %}}
 
-<!-- ... 
 
 {{< teams types="core=Core Team,contributors=Contributors" >}}
 
--->
 
-{{% partners categories="organizers" %}}
+{{% partners categories="organizers=Organizing communities" %}}
 
 {{% /partners %}}

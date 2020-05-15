@@ -52,7 +52,8 @@ a, a:visited {
 }
 
 .language.english::before {
-  content: '🇬🇧';
+  content: 'EN';
+  font-size: 50%;
 }
 
 .visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
