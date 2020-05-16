@@ -30,6 +30,13 @@
 - title: Jørn Are Hatlelid
   type: core
   subtitle: Organizer
+  socials:
+  - link: 'https://www.twitter.com/jornare'
+    name: Twitter
+  - link: 'https://github.com/jornare'
+    name: Github
+  - link: 'https://www.linkedin.com/in/jornarehatlelid/'
+  name: Linkedin
   key: jorn_are_hatletid
 
 - title: Michael Karén
