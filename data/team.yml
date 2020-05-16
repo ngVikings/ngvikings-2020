@@ -59,6 +59,13 @@
 - title: Fabriece Sumuni
   type: core
   subtitle: Organizer
+  socials:
+    - link: 'https://www.twitter.com/sfabriece'
+      name: Twitter
+    - link: 'https://github.com/sfabriece'
+      name: Github
+    - link: 'https://www.linkedin.com/in/fabriece-sumuni-0087465a/'
+      name: Linkedin
   key: fabriece_sumuni
 
 - title: Majid Hajian
