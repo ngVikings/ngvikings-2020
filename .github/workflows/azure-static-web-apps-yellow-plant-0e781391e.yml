@@ -26,7 +26,7 @@ jobs:
         ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
         app_location: '/' # App source code path
         app_artifact_location: 'public'
-        app_build_command: 'npm install && npm run build'
+        app_build_command: 'npm run build'
         ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
