@@ -32,9 +32,16 @@
   subtitle: Organizer
   key: jorn_are_hatletid
 
-- title: Michael Karen
+- title: Michael Karén
   type: core
   subtitle: Organizer
+  socials:
+    - link: 'https://www.twitter.com/melcor76'
+      name: Twitter
+    - link: 'https://github.com/melcor76'
+      name: Github
+    - link: 'https://www.linkedin.com/in/michael-karen/'
+      name: Linkedin
   key: michael_karen
 
 - title: Jagoda Cubrilo
