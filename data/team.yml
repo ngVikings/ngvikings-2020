@@ -65,7 +65,8 @@
   type: core
   subtitle: Organizer
   key: jagoda_cubrilo
-      - link: 'https://www.linkedin.com/in/jagoda-cubrilo-web-developer/'
+  socials:
+    - link: 'https://www.linkedin.com/in/jagoda-cubrilo-web-developer/'
       name: Linkedin
 
 - title: Fabriece Sumuni
