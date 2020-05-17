@@ -1,1 +1,54 @@
-[]
+- day: '2020-05-25'
+  start: '15:00'
+  rooms:
+    - room: online
+      slots:
+        - slot: open-1
+          talk: __open
+        - slot: slot-1
+          talk: 7d
+        - slot: slot-2
+          talk: component_features
+        - slot: slot-3
+          talk: ngrx_ngxs_akita
+        - slot: panel-1
+          talk: __panel-1
+        - slot: slot-4
+          talk: authn
+        - slot: slot-5
+          talk: microfrontend_revolution
+        - slot: slot-6
+          talk: scully
+        - slot: slot-7
+          talk: angular
+        - slot: panel-2
+          talk: __panel-2
+        - slot: close-1
+          talk: __close
+- day: '2020-05-26'
+  start: '09:30'
+  rooms:
+    - room: online
+      slots:
+        - slot: open-2
+          talk: __open
+        - slot: slot-8
+          talk: static_web_apps
+        - slot: slot-9
+          talk: angular_cli
+        - slot: slot-10
+          talk: bazel
+        - slot: panel-3
+          talk: __panel-3
+        - slot: slot-11
+          talk: pdf_documents
+        - slot: slot-12
+          talk: pwa
+        - slot: slot-13
+          talk: design_system
+        - slot: slot-14
+          talk: accessibility
+        - slot: panel-4
+          talk: __panel-4
+        - slot: close-2
+          talk: __close

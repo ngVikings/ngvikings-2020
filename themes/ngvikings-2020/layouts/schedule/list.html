@@ -86,14 +86,9 @@
 
 </section>
 
-<!--<a href="#" class="goto-top" aria-label="Top">⬆︎</a>-->
-
-{{ end }}
-
-{{ define "scripts" }}
 <script>
 function checkLinks() {
-    const currentDay = document.location.hash;
+	const currentDay = document.location.hash;
     if (!currentDay) {
         let firstDay = document.querySelector('nav.day-tabs a');
         if (firstDay) {
@@ -108,4 +103,9 @@ function checkLinks() {
 window.addEventListener("load", checkLinks, false);
 window.addEventListener("hashchange", checkLinks, false);
 </script>
+
 {{ end }}
+
+
+
+

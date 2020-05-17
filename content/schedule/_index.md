@@ -11,6 +11,6 @@ horizontal: false
 
 {{% hero %}}
 
-We work on the detailed schedule
+All  times are in CEST timezone (GMT+2)
 
 {{% /hero %}}

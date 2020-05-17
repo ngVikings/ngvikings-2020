@@ -63,6 +63,12 @@ section .tags {
   background-image: url('/images/backgrounds/lunch.jpg');
 }
 
-.tag-party {
+.tag-party, .tag-close {
   background-image: url('/images/backgrounds/party.jpg');
+  background-position: center center;
+}
+
+.tag-panel {
+  background-image: url('/images/backgrounds/panel.jpg');
+  background-position: center center;
 }
