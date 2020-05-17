@@ -51,6 +51,16 @@
       name: Linkedin
   key: michael_karen
 
+- title: Mikhail Belov
+  type: core
+  subtitle: Organizer
+  socials:
+    - link: 'https://www.twitter.com/mikhaabel'
+      name: Twitter
+    - link: 'https://www.linkedin.com/in/belovm'
+      name: Linkedin
+  key: mikhail_belov
+
 - title: Jagoda Cubrilo
   type: core
   subtitle: Organizer
