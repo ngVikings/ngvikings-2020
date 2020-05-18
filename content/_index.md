@@ -21,6 +21,7 @@ menu:
 
 {{% /jumbo %}}
 
+{{< youtube-section link="Thxjo5Him5c" title="ngVikings Online Meetup" class="" >}}
 
 {{% home-info what="Participants:3000,Day:2,Sessions:14,Fun:∞" class="primary" %}}
 ## What is ngVikings?
@@ -30,8 +31,6 @@ ngVikings is a non-profit, non-commercial, 100% community-driven event comprised
 Always having Angular team members, Google Developer Experts, and legendary international speakers onboard, ngVikings Conference guarantees an excellent program: fresh, technically deep, and 100% useful.
 
 {{% /home-info %}}
-
-{{< youtube-section link="3fCu31qaVMA" title="Watch 2019 Highlights" class="" >}}
 
 <!-- ... -->
 
