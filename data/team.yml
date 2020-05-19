@@ -86,10 +86,15 @@
   subtitle: Organizer
   key: majid_hajian
 
-- title: Banafsheh Rahnama
+- title: Banafsheh (Violet) Daneshmaslak
   type: contributors
   subtitle: Graphic designer
-  key: banafsheh_rahnama
+  socials:
+    - link: 'https://twitter.com/dm_violet'
+      name: Twitter
+    - link: 'https://www.linkedin.com/in/banafsheh-daneshmaslak-40a2aaa8/'
+      name: Linkedin
+  key: banafsheh_danesh
 
 - title: Alexander Hafstad
   type: contributors
