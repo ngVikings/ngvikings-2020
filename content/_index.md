@@ -16,12 +16,12 @@ menu:
 <a class="btn primary btn-lg" style="margin-top: 1em;" href="https://ti.to/ngvikings/2020/with/ngvikings-online-free-ticket-may-25-26th" target="_blank">Get your ticket</a>  
 <small style="font-size: 50%; display: block;">It's important to claim your ticket - we'll send a link to the stream to the ticketholders before event</small>
 
-<a class="btn accent" style="margin-top: 1em;" href="blog/ngvikings-meetup/">Join pre-conference meetup</a>
+<a class="btn accent" style="margin-top: 1em;" href="https://join.slack.com/t/ngvikings/shared_invite/zt-87nh1us6-k4_sUkeXcoz59bQDsWRt_g">Join ngVikings Slack to stay connected during and after the event</a>
 
 
 {{% /jumbo %}}
 
-{{< youtube-section link="Thxjo5Him5c" title="ngVikings Online Meetup" class="" >}}
+{{< youtube-section link="Thxjo5Him5c" title="Watch pre-ngVikings Online Meetup" class="" >}}
 
 {{% home-info what="Participants:3000,Day:2,Sessions:14,Fun:∞" class="primary" %}}
 ## What is ngVikings?
