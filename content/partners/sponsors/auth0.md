@@ -10,4 +10,5 @@ socials:
   - icon: linkedin
     link: 'https://www.linkedin.com/company/auth0/'
 ---
-OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords.[1] This mechanism is used by companies such as Amazon,[2] Google, Facebook, Microsoft and Twitter to permit the users to share information about their accounts with third party applications or websites.
+Built for Developers,Trusted by Global Enterprises.
+Auth0 solve the most complex and large-scale identity use cases for global enterprises with their extensible and easy-to-integrate platform, securing billions of logins every year.
