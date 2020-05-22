@@ -29,6 +29,7 @@ googleAnalytics = "UA-7105068-12"
     safariPinnedTab = "/safari-pinned-tab.svg"
     themeColor = "#b4450e"
     googleWebmasterKey = ""
+    env = "production"
 
 [params.logos]
     jumbo = "/images/logos/logo.png"
