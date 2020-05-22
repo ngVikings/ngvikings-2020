@@ -30,7 +30,6 @@ Just run
 hugo
 ```
 
-More information [here](https://gohugo.io/commands/hugo/)
 
 ## Edit data
 
