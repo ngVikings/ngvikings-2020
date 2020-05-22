@@ -10,5 +10,4 @@ socials:
   - icon: linkedin
     link: 'https://www.linkedin.com/company/auth0/'
 ---
-Built for Developers,Trusted by Global Enterprises.
-Auth0 solve the most complex and large-scale identity use cases for global enterprises with their extensible and easy-to-integrate platform, securing billions of logins every year.
+Built for Developers,Trusted by Global Enterprises. Auth0 solve the most complex and large-scale identity use cases for global enterprises with their extensible and easy-to-integrate platform, securing billions of logins every year.
