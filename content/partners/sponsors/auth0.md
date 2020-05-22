@@ -4,6 +4,7 @@ title: Auth0
 category: sponsors
 order: 33
 website: 'https://auth0.com/'
+lang: en
 socials:
   - icon: twitter
     link: 'https://twitter.com/auth0'
