@@ -7,7 +7,7 @@ company: HMMH AG
 city: 'India'
 photoURL: /images/speakers/santosh_yadav.jpg
 images:
-  - /images/speakers/badge-santosh_yadav.jpg
+  - https://ngvikings.org/images/speakers/badge-santosh_yadav.jpg
 title: ngVikings 2020 speaker - Santosh Yadav
 ---
 Santosh has more than 10 years of experience, he is a GDE for Angular and Web Technologies, open source contributor and Writer at AngularInDepth and DotNetTricks.

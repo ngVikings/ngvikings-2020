@@ -17,7 +17,7 @@ socials:
     link: 'http://ANGULARarchitects.io'
     name: ANGULARarchitects
 images:
-  - /images/speakers/badge-manfred_steyer.jpg
+  - https://ngvikings.org/images/speakers/badge-manfred_steyer.jpg
 title: ngVikings 2020 speaker - Manfred Steyer
 
 ---

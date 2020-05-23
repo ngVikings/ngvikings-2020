@@ -7,6 +7,6 @@ company: Google
 city: 'USA'
 photoURL: /images/speakers/stephen_fluin.jpg
 images:
-  - /images/speakers/badge-stephen_fluin.jpg
+  - https://ngvikings.org/images/speakers/badge-stephen_fluin.jpg
 title: ngVikings 2020 speaker - Stephen Fluin
 ---

@@ -7,6 +7,6 @@ company: Microsoft
 city: 'USA'
 photoURL: /images/speakers/john_papa.jpg
 images:
-  - /images/speakers/badge-john_papa.jpg
+  - https://ngvikings.org/images/speakers/badge-john_papa.jpg
 title: ngVikings 2020 speaker - John Papa
 ---
