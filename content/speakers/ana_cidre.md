@@ -8,4 +8,5 @@ city: 'Spain'
 photoURL: /images/speakers/ana_cidre.jpg
 images:
   - /images/speakers/badge-ana_cidre.jpg
+title: ngVikings 2020 speaker - Ana Cidre
 ---

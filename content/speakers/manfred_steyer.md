@@ -18,6 +18,7 @@ socials:
     name: ANGULARarchitects
 images:
   - /images/speakers/badge-manfred_steyer.jpg
+title: ngVikings 2020 speaker - Manfred Steyer
 
 ---
 Trainer, consultant and programming architect with focus on Angular. Google Developer Expert (GDE) and Trusted Collaborator in the Angular team who writes for O'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.
