@@ -6,4 +6,6 @@ feature: true
 company: Microsoft
 city: 'USA'
 photoURL: /images/speakers/john_papa.jpg
+images:
+  - /images/speakers/badge-john_papa.jpg
 ---

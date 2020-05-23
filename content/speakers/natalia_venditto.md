@@ -6,4 +6,6 @@ feature: true
 company: Netcentric
 city: 'Spain'
 photoURL: /images/speakers/natalia_venditto.jpg
+images:
+  - /images/speakers/badge-natalia_venditto.jpg
 ---
