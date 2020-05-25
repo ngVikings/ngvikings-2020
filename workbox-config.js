@@ -3,9 +3,15 @@ module.exports = {
     "globPatterns": [
       "**/*.html",
       "styles/**/*.css",
-      "images/**/*.{png,webp,jpg,gif}",
+      "images/backgrounds/*.webp",
+      "images/blog/*.webp",
+      "images/logos/*.png",
+      "images/partners/**/*.webp",
+      "images/speakers/*.jpg",
+      "images/team/*.webp",
       "manifest/**/*.{png,webp,jpg,gif}",
-      "*.{js,svg,ico,png}"
+      "*.{js,svg,ico}",
+      "social-share.png"
     ],
     "swDest": "public/sw.js",
     "swSrc": "themes/ngvikings-2020/static/sw.js"
