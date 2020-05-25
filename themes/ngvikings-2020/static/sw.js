@@ -27,6 +27,22 @@ precacheAndRoute(self.__WB_MANIFEST, {
 
 // RUNTIME CACHING
 
+// Images
+registerRoute(
+  // /.*\.(?:png|jpg|webp|svg|gif)/,
+  ({request}) => request.destination === 'image',
+  new strategies.CacheFirst({
+    cacheName: "images",
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 100,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+        purgeOnQuotaError: true,
+      }),
+    ],
+  })
+);
+
 // Google fonts
 registerRoute(
   new RegExp("https://fonts.(?:googleapis|gstatic).com/(.*)"),
