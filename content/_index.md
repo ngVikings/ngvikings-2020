@@ -24,7 +24,7 @@ menu:
 {{% /jumbo %}}
 
 
-{{% home-info what="Participants:3000,Day:2,Sessions:14,Fun:∞" class="primary" %}}
+{{% home-info what="Participants:3400,Days:2,Sessions:14,Fun:∞" class="primary" %}}
 ## What is ngVikings?
 
 ngVikings is a non-profit, non-commercial, 100% community-driven event comprised of many Nordic Angular groups with more than 6500 active members in total.
