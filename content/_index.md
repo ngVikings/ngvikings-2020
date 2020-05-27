@@ -8,23 +8,24 @@ menu:
 
 ---
 
-{{< youtube-section link="VuHuqRJQzDc" title="ngVikings 2020 Online Stream" class="" day2="B4mqeXbNGkY" >}}
+{{< youtube-section link="VuHuqRJQzDc" title="ngVikings 2020 Full Video - Day 1" class="">}}
+
+{{< youtube-section link="B4mqeXbNGkY" title="ngVikings 2020 Full Video - Day 2" class="">}}
 
 {{% jumbo %}}
 
 ## May 25-26th, Online
 ### Free conference for Angular developers
 
-<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://ti.to/ngvikings/2020/with/ngvikings-online-free-ticket-may-25-26th" target="_blank">Get your ticket</a>  
-<small style="font-size: 50%; display: block;">Get your FREE ticket to claim a digital conference badge</small>
+<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://twitter.com/ngvikingsconf" target="_blank">Follow our Twitter to stay updated about our next event</a>  
 
-<a class="btn accent" style="margin-top: 1em;" href="https://join.slack.com/t/ngvikings/shared_invite/zt-87nh1us6-k4_sUkeXcoz59bQDsWRt_g">Join ngVikings Slack to stay connected during and after the event</a>
+<a class="btn accent" style="margin-top: 1em;" href="https://bit.ly/ngvikings-slack">Join ngVikings Slack to stay connected during and after the event</a>
 
 
 {{% /jumbo %}}
 
 
-{{% home-info what="Participants:3400,Days:2,Sessions:14,Fun:∞" class="primary" %}}
+{{% home-info what="Participants:3500,Days:2,Sessions:14,Fun:∞" class="primary" %}}
 ## What is ngVikings?
 
 ngVikings is a non-profit, non-commercial, 100% community-driven event comprised of many Nordic Angular groups with more than 6500 active members in total.
