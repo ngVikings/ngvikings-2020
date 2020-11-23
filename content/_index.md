@@ -8,9 +8,9 @@ menu:
 
 ---
 
-{{< youtube-section link="VuHuqRJQzDc" title="ngVikings 2020 Full Video - Day 1" class="">}}
+{{< youtube-section link="E1lgRKAAu2A" title="ngVikings Meetup #1" class="">}}
 
-{{< youtube-section link="B4mqeXbNGkY" title="ngVikings 2020 Full Video - Day 2" class="">}}
+{{< youtube-section link="VuHuqRJQzDc" title="ngVikings 2020 Playlist" class="">}}
 
 {{% jumbo %}}
 
