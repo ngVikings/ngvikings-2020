@@ -10,7 +10,7 @@ menu:
 
 {{< youtube-section link="E1lgRKAAu2A" title="ngVikings Meetup #1" class="">}}
 
-{{< youtube-section link="VuHuqRJQzDc" title="ngVikings 2020 Playlist" class="">}}
+<a class="btn primary btn-lg" style="margin-top: 1em;" href="https://www.youtube.com/playlist?list=PLVI0Ut22uwY4-fTMPHxCCyzY7ga17rmqa" target="_blank">ngVikings 2020 Full Playlist</a>  
 
 {{% jumbo %}}
 
