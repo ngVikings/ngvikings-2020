@@ -8,7 +8,7 @@ menu:
 
 ---
 
-{{< youtube-section link="ASue-kgBubU" title="ngVikings Meetup" class="">}}
+{{< youtube-section link="__TbR--u-u4" title="7 D's of Development by John Papa" class="">}}
 
 <div style="text-align: center"><a class="btn primary btn-lg" style="margin-bottom: 1em;" href="https://www.youtube.com/playlist?list=PLVI0Ut22uwY4-fTMPHxCCyzY7ga17rmqa" target="_blank">ngVikings 2020 Full Playlist</a></div>
 
